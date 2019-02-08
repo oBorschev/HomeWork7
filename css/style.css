@@ -1,0 +1,233 @@
+@import "./vars.css";
+@import "./fonts.css";
+
+/* Declaration global settings */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.wrapper-section-services-nav,
+.wrapper-section-contactus,
+.wrapper-section-services{
+    width: 1400px;
+}
+
+.section-services,
+.section-contactus,
+.header{
+    width:940px;
+    margin: 0 auto;
+}
+
+.navigation-link,
+.section-header,
+.input,
+.send-message,
+.input-form-message
+{
+    text-transform: uppercase;
+}
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.logo{
+    font-family: 'Yellowtail', serif;
+    font-size: 26px;
+    color: var(--color-hover);
+}
+
+.navigation-list{
+    width: 485px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-link{
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    color: #222222;
+}
+
+.navigation-link:hover,
+.navigation-link:focus{
+    color: var(--color-hover);
+}
+
+/* Section-Services */
+
+.section-services{
+    height: 460px;
+    padding-top: 125px;
+    text-align: center;
+}
+
+.section-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-header{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', serif;
+    font-size: 40px;
+    color: #222222;
+    font-weight: 700;
+}
+.section-descr{
+    margin-bottom: 45px;
+    font-family: 'Crimson Text',serif;
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+.section-item{
+    width: 290px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-item:nth-child(1)::before{
+    background-image: url(../img/Icon-Basket.png);
+}
+.section-item:nth-child(2)::before{
+    background-image: url(../img/Icon-Laptop.png);
+}
+.section-item:nth-child(3)::before{
+    background-image: url(../img/Icon-Locked.png);
+}
+.section-item::before{
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 35px;
+    padding: 13px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid var(--color-hover);
+    border-radius: 50%;
+}
+
+.section-title{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.section-text{
+    font-family: Roboto Slab, serif;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+/* Section Contact us */
+
+.wrapper-section-contactus{
+    height: 675px;
+    text-align: center;
+    background-image: url(../img/MapImage.png);
+}
+
+.section-contactus{
+    padding-top: 105px;
+    height: 460px;
+}
+.contactus-header{
+    color: #fff;
+}
+
+/* Form */
+
+.form-contactus{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-container,
+.form-message{
+    width: 455px;
+    height: 210px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input,
+.input-form-message{
+    border-radius: 5px;
+}
+.input{
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+}
+.input,
+.input-form-message{
+    font-size: 14px;
+    padding-left: 20px;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    color: #bbbbbb;
+}
+.input-form-message{
+    height: 100%;
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+::-webkit-input-placeholder {color:#bbbbbb;}
+::-moz-placeholder          {color:#bbbbbb;}/* Firefox 19+ */
+:-moz-placeholder           {color:#bbbbbb;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#bbbbbb;}
+
+.form-name:valid,
+.form-e-mail:valid,
+.input-form-message:valid{
+    border: 2px solid #08d66e;
+    border-radius: 5px;
+}
+
+.form-name:invalid,
+.form-e-mail:invalid,
+.input-form-message:invalid{
+    border: 2px solid #d22626;
+    border-radius: 5px;
+}
+
+.send-message{
+    margin-top: 30px;
+    width: 240px;
+    height: 64px;
+    background-color: var(--color-hover);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    font-family: serif;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 18px;
+}
