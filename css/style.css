@@ -22,12 +22,6 @@ a{
     display: block;
 }
 
-.wrapper-section-services-nav,
-.wrapper-section-contactus,
-.wrapper-section-services{
-    width: 1400px;
-}
-
 .section-services,
 .section-contactus,
 .header{
@@ -60,6 +54,7 @@ a{
     width: 485px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navigation-link{
@@ -76,9 +71,9 @@ a{
 /* Section-Services */
 
 .section-services{
-    height: 460px;
     padding-top: 125px;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .section-list{
@@ -103,10 +98,6 @@ a{
 .section-item{
     width: 290px;
     height: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .section-item:nth-child(1)::before{
@@ -128,12 +119,14 @@ a{
     background-repeat: no-repeat;
     border: 3px solid var(--color-hover);
     border-radius: 50%;
+    margin-bottom: 24px;
 }
 
 .section-title{
     font-family: 'Montserrat', serif;
     font-weight: 700;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .section-text{
@@ -144,14 +137,13 @@ a{
 /* Section Contact us */
 
 .wrapper-section-contactus{
-    height: 675px;
+    padding-bottom: 100px;
     text-align: center;
     background-image: url(../img/MapImage.png);
 }
 
 .section-contactus{
     padding-top: 105px;
-    height: 460px;
 }
 .contactus-header{
     color: #fff;
@@ -162,7 +154,8 @@ a{
 .form-contactus{
     width: 940px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
+    flex-wrap: wrap;
 }
 .form-container,
 .form-message{
@@ -170,6 +163,7 @@ a{
     height: 210px;
 }
 .form-container{
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -230,4 +224,7 @@ a{
     font-family: 'Montserrat', serif;
     font-weight: 700;
     font-size: 18px;
+}
+.send-message:hover{
+    background-color: #fce07e;
 }
