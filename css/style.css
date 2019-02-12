@@ -97,7 +97,6 @@ a{
 
 .section-item{
     width: 290px;
-    height: 190px;
 }
 
 .section-item:nth-child(1)::before{
